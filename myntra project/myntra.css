@@ -237,6 +237,138 @@ footer a {
     margin-right: 6px;
 }
 
+/* Menu container */
+#menu-container {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    
+}
+#menu-container ul li {
+    padding: 15px 20px; /* Adjust padding to increase size */
+    font-weight: bold;
+    border: 1px solid #ccc; 
+    background-color: #faf3f3; 
+}
+
+/* Menu */
+#menu {
+    list-style-type: none;
+    padding: 0;
+    background-color: #302424;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-weight: bold;
+    
+}
+
+/* Navigation links */
+.nav_bar a {
+    position: relative;
+}
+
+/* Adjust menu position */
+.nav_bar a:hover + #menu-container,
+#menu-container:hover {
+    display: block;
+}
+#menu-container li:hover {
+    color: pink;
+    background-color: lightpink;
+    color: #282c3f;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin: 2% 0;
+    }
+
+    .nav_bar {
+        min-width: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_bar a {
+        padding: 15px 0;
+    }
+
+    .search_bar {
+        width: 100%;
+    }
+
+    .search_input {
+        width: calc(100% - 40px);
+    }
+
+    .action_bar {
+        margin-right: 2%;
+    }
+
+    .banner_container {
+        margin: 20px 0;
+    }
+
+    .category_heading {
+        font-size: 1.5em;
+        margin: 30px 0 10px 10px;
+    }
+
+    .category_items {
+        justify-content: center;
+    }
+
+    .sale_item {
+        width: 90%;
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Adjustments for even smaller screens */
+@media screen and (max-width: 480px) {
+    .nav_bar a {
+        font-size: 12px;
+    }
+
+    .search_input {
+        width: calc(100% - 30px);
+    }
+
+    .action_container {
+        margin-right: 2%;
+    }
+
+    .banner_image {
+        max-width: 100%;
+    }
+
+    .category_heading {
+        font-size: 1.2em;
+        margin: 20px 0 10px 10px;
+    }
+
+    .sale_item {
+        width: 95%;
+    }
+}
+
+
   
   
   
