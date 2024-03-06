@@ -292,8 +292,13 @@ footer a {
 
     .nav_bar {
         min-width: unset;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-items: auto;
+        gap: 5px;
+    }
+    .action_bar{
+        margin-left: 180px;
     }
 
     .nav_bar a {
@@ -367,6 +372,33 @@ footer a {
         width: 95%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
